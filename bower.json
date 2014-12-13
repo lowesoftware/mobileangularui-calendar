@@ -1,0 +1,31 @@
+{
+  "name": "mobileangularui-calendar",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lowesoftware/mobileangularui-calendar",
+  "authors": [
+    "Alexander Lowe, Lowe Software"
+  ],
+  "description": "A responsive calendar for mobile angular ui.",
+  "main": "calendar.css",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "mobile",
+    "fontawesome",
+    "mobileangularui",
+    "calendar",
+    "responsive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">= 1.2.0",
+    "mobile-angular-ui": ">= 0.0.0"
+  }
+}

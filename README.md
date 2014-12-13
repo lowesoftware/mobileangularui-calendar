@@ -1,3 +1,5 @@
+# This is a fork of the below project made to be compatible with mobile angular ui. Much credit to the original author.
+
 # ui-rCalendar directive
 
 A pure AngularJS responsive calendar directive
