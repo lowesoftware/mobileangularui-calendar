@@ -2,36 +2,49 @@
 <html ng-app="calendarDemoApp">
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="description" content="AngularJS Responsive Calendar Demo">
-    <title>AngularJS Responsive Calendar Demo</title>
-    <link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <meta name="description" content="Mobile Angular UI Responsive Calendar Demo">
+    <title>Mobile Angular UI Responsive Calendar Demo</title>
+
+
+    <!-- angular -->
+    <script src="../bower_components/angular/angular.js"></script>
+
+    
+
+    <!-- mobile angular ui -->
+    <link rel="stylesheet" href="../bower_components/mobile-angular-ui/dist/css/mobile-angular-ui-base.css"/>
+    <link rel="stylesheet" href="../bower_components/mobile-angular-ui/dist/css/mobile-angular-ui-desktop.css"/>
+    <script src="../bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.js"></script>
+
+    <!-- calendar -->
     <link rel="stylesheet" href="../css/rcalendar/calendar.css"/>
-    <script src="http://cdn.staticfile.org/angular.js/1.2.10/angular.min.js"></script>
     <script src="../src/rcalendar/calendar.js"></script>
+
+    <!-- demo -->
     <script src="calendarDemoCtrl.js"></script>
 </head>
 <body>
 <header class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/">AngularJS Responsive Calendar</a>
+        <div class="navbar-header pull-left">
+            <a class="navbar-brand" href="/">Mobile Angular UI Responsive Calendar</a>
         </div>
-        <p class="navbar-text hidden-xs">A pure AngularJS responsive calendar directive</p>
-        <ul class="nav navbar-nav navbar-right hidden-xs">
-            <li><a href="https://github.com/twinssbc/AngularJS-ResponsiveCalendar"><img style="display:inline-block"
+        <ul class="pull-right nav navbar-nav navbar-right hidden-xs">
+            <li><a href="https://github.com/lowesoftware/mobileangularui-calendar"><img style="display:inline-block"
                                                                                         src="github-icon.png"/> View on
                 GitHub</a></li>
         </ul>
     </div>
 </header>
-<section class="content" style="margin-top: 70px;">
+<div class="scrollable">
+<section class="content scrollable-content" style="margin-top: 70px;">
     <section class="container">
-        <section ng-controller="CalendarDemoCtrl" ng-init="loadEvents()">
+        <section ng-controller="CalendarDemoCtrl" ng-init="loadEvents();">
             <div class="alert alert-success" ng-show="event">Event selected:{{event.startTime|date:
                 'MMM/dd,yyyy,HH:mm'}} - {{event.endTime|date:'MMM/dd,yyyy,HH:mm'}}, {{event.title}}
             </div>
 
-            <div class="btn-toolbar">
+            <div class="">
                 <div class="btn-group">
                     <button type="button" class="btn btn-default" ng-class="{active:mode==='month'}"
                             ng-click="changeMode('month')">
@@ -61,5 +74,6 @@
         </section>
     </section>
 </section>
+</div>
 </body>
 </html>

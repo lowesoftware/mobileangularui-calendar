@@ -1,4 +1,4 @@
-angular.module('calendarDemoApp', ['ui.rCalendar']);
+angular.module('calendarDemoApp', ['mobile-angular-ui', 'ui.rCalendar']);
 
 angular.module('calendarDemoApp').controller('CalendarDemoCtrl', ['$scope', function ($scope) {
     $scope.changeMode = function (mode) {
